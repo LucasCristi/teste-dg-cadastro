@@ -4,19 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
   <body>
-    <header></header>
+    <header>
+        <h1>Dados cadastrais</h1>
+    </header>
     <main>
-        <!-- <div class="lista-cadastros"> -->
-            <ul class="cadastros" alt="cadastros" data-cadastros></ul>
-        <!-- </div> -->
+        <div class="botoes-pesquisa">
+            <button id="todos-os-dados">visualizar cadastros</button>
+            <button id="filtro">visualizar cadastros</button>
+        </div>
+        <div class="input-pesquisa">
+            <input id="cidade-pesquisada" placeholder="Pesquisar cidade" type="search" data-pesquisa>
+        </div>
+        <button id="pesquisar">Pesquisar</button>
 
+        <ul class="cadastros" alt="cadastros" data-cadastros></ul>
     </main>
     <script src="./index.js" type="module"></script>
-    
+    <script src="filtro.js" type="module"></script>
+    <script src="pesquisa.js" type="module"></script>
   </body>
 </html>

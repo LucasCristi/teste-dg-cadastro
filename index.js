@@ -1,7 +1,7 @@
 import { conexaoApi } from "./conectaApi.js";
 const listaDeCadastros = document.querySelector("[data-cadastros]");
 
-function constroiCardCadastros(nome, idade, cidade) {
+export default function constroiCardCadastros(nome, idade, cidade) {
   const cadastro = document.createElement("li");
   cadastro.className = "lista-cadastro";
   cadastro.innerHTML = `
@@ -29,6 +29,12 @@ async function listaCadastrosNaTela() {
   }
 }
 
-listaCadastrosNaTela();
 
-console.log()
+
+
+const mostrarDados = document.getElementById("todos-os-dados")
+mostrarDados.addEventListener("click", () => {
+  listaDeCadastros.innerHTML = ""
+  listaCadastrosNaTela();
+})
+
