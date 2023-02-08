@@ -7,9 +7,7 @@ export default function constroiCardCadastros(nome, idade, cidade) {
   cadastro.innerHTML = `
     
   <div class="dados-cadastro">
-          <h1>${nome} </h1>
-          <p>${idade} </p>
-         <p>${cidade} </p>
+  <ol><li> ${idade}</li><li> ${nome}</li><li> ${cidade}</li></ol>
   </div>
       `;
 
@@ -28,9 +26,6 @@ async function listaCadastrosNaTela() {
     listaDeCadastros.innerHTML = `<h2 class="">Não foi possível carregar os cadastros</h2> `;
   }
 }
-
-
-
 
 const mostrarDados = document.getElementById("todos-os-dados")
 mostrarDados.addEventListener("click", () => {

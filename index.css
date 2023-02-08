@@ -14,15 +14,21 @@ body {
 }
 
 main {
+  background-color: #051937;
   text-align: center;
-  height: 100vh;
+  height: 100%;
 }
 
 header {
   text-align: center;
-  font-size: 2rem;
   text-transform: uppercase;
   padding: 1rem;
+  background-color: #051937;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
 }
 
 .botoes-pesquisa {
@@ -34,11 +40,11 @@ header {
   margin: auto;
 }
 
-input{
-    text-align: center;
-    border-radius: .5rem;
-    padding: .2rem .5rem;
-    margin-bottom: .2rem;
+input {
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 button {
@@ -51,21 +57,27 @@ button {
   transition: 1s;
 }
 
-button:hover{
-    background-color:  #12a4eb;
-    color: #000;
-    letter-spacing: .1rem;
+button:hover {
+  background-color: #12a4eb;
+  color: #000;
+  letter-spacing: 0.1rem;
 }
 
-.lista-cadastro {
-  margin: auto;
+.lista-cadastro,
+.resultado-filtrado {
+  margin: 0.2rem auto;
   padding: 1rem;
-  width: 50%;
-  border-bottom: 0.1rem solid #000;
+  width: 20%;
+  border: 0.1rem solid #000;
+  border-radius: 0.5rem;
   text-align: center;
 }
 
-.cadastros{
+.lista-cadastro li {
+  text-align: center;
+}
+
+.cadastros {
   background: linear-gradient(
     to bottom,
     #051937,
@@ -77,4 +89,48 @@ button:hover{
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100%;
+  padding-top: 2rem;
+}
+
+fieldset {
+  padding: 1rem;
+  background-color: #051937;
+}
+
+legend {
+  background-color: #051937;
+}
+
+select {
+  width: 20%;
+  text-align: center;
+  border-radius: 1rem;
+  transition: 1s;
+  color: #000;
+}
+
+select:hover {
+  background-color: #12a4eb;
+  color: #000;
+  letter-spacing: 0.1rem;
+}
+
+.option {
+  width: 3rem;
+  color: #000;
+}
+
+option:active {
+  text-align: center;
+}
+
+.resultado-filtrado {
+  padding: 1rem;
+}
+
+ol {
+  background-color: #133760;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000;
 }

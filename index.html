@@ -11,17 +11,26 @@
   <body>
     <header>
         <h1>Dados cadastrais</h1>
-    </header>
-    <main>
         <div class="botoes-pesquisa">
             <button id="todos-os-dados">visualizar cadastros</button>
-            <button id="filtro">visualizar cadastros</button>
         </div>
         <div class="input-pesquisa">
             <input id="cidade-pesquisada" placeholder="Pesquisar cidade" type="search" data-pesquisa>
         </div>
         <button id="pesquisar">Pesquisar</button>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Ordenar</legend>
+            <select name="#" id="selected">
+                <option class="option" value=""></option>
+                <option class="option" value="idade">Idade</option>
+                <option class="option" value="nome">Nome</option>
+                <option class="option" value="cidade">Cidade</option>
+            </select>
+        </fieldset>
 
+        
         <ul class="cadastros" alt="cadastros" data-cadastros></ul>
     </main>
     <script src="./index.js" type="module"></script>
